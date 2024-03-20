@@ -57,8 +57,8 @@ export default function Catogary() {
 
 
     return (
-        <section id='catogary' className=' bg-[#fafafa] dark:bg-[#121212] text-black dark:text-white'>
-            <ul className='flex gap-2  w-[800px] overflow-scroll'>
+        <section id='catogary' className=' bg-[#fafafa] dark:bg-[#121212] text-black dark:text-white p-2 w-full fixed'>
+            <ul className='flex gap-2  w-full overflow-scroll'>
                 {
                     youtubeCategories.map((e)=> <li className="whitespace-nowrap py-1 px-2 border">{e}</li>)
                 }

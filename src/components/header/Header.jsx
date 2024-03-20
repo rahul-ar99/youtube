@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
 return (
-    <section id='header' className='w-full py-2 bg-[#fafafa] dark:bg-[#121212] text-[#121212] dark:text-[#fafafa]'>
+    <section id='header' className='w-full py-2 bg-[#fafafa] dark:bg-[#121212] text-[#121212] dark:text-[#fafafa] fixed top-0 z-10'>
         <div className='wrapper  flex justify-between items-center'>
             <div className='flex gap-5 items-center'>
                 <div className='p-1'>

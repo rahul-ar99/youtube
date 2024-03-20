@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <section id='navbarsection' className='flex flex-col w-min p-4 bg-[#fafafa] dark:bg-[#121212]' >
+        <section id='navbarsection' className='flex flex-col min-w-[15%] h-[94vh] overflow-scroll p-4 bg-[#fafafa] dark:bg-[#121212] sticky top-0' >
             <div>
                 <ul>
                     <li className='text-black dark:text-white'><i className='fa fa-car'></i> home</li>
