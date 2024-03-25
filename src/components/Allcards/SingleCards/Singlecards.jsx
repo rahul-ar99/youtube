@@ -1,19 +1,19 @@
 import React from 'react'
 
-export default function Singlecards() {
+export default function Singlecards({head, channel, time, views , image}) {
   return (
-    <div className='w-min'>
-        <div className='w-[300px] aspect-video overflow-hidden'>
-            <img src={require('../../../assets/images/Screenshot from 2024-03-12 14-33-52.png')} className='w-full' alt="video img" />
+    <div className='w-min hover:bg-[#1a1a1a] p-1 hover:cursor-pointer p-3 rounded-lg'>
+        <div className='w-[300px] aspect-video overflow-hidden rounded-2xl hover:rounded-none transition-all duration-500 mb-3'>
+            <img src={require(`../../../assets/images/mainpage/image_${image}.webp`)} className='w-full' alt="video img" />
         </div>
         <div className='flex w-full'>
-            <div className='w-[40px] aspect-square'>
-                <img src={require('../../../assets/images/Screenshot from 2024-03-12 14-33-52.png')} alt="profile photo" className='w-full aspect-square rounded-full' />
+            <div className='w-[40px] aspect-square mr-3'>
+                <img src={require(`../../../assets/images/mainpage/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
             </div>
             <div className='w-full'>
-                <h3 className=' text-xl text-wrap'>the akdf o ewjsdfp jas asjdo wefasoifj </h3>
-                <p>channel name</p>
-                <p>12M views - 3 days ago</p>
+                <h3 className='text-base text-wrap'>{head.slice(0,35)}... </h3>
+                <p className="text-sm text-zinc-500">{channel}</p>
+                <p className="text-sm text-zinc-500">{views}K views - {time}</p>
             </div>
         </div>
     </div>
