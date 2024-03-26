@@ -29,22 +29,22 @@ export default function Navbar() {
                 <ul>
                     <li className={`text-black dark:text-white`} ><a href="#" className='flex items-center'>
                         <div className='w-[30px] aspect-square mr-3'>
-                            <img src={require(`../../assets/images/mainpage/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
+                            <img src={require(`../../assets/images/mainpage/all/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
                         </div> claire wineland</a>
                     </li>
                     <li className={`text-black dark:text-white`} ><a href="#" className='flex items-center'>
                         <div className='w-[30px] aspect-square mr-3'>
-                            <img src={require(`../../assets/images/mainpage/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
+                            <img src={require(`../../assets/images/mainpage/all/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
                         </div> claire wineland</a>
                     </li>
                     <li className={`text-black dark:text-white`} ><a href="#" className='flex items-center'>
                         <div className='w-[30px] aspect-square mr-3'>
-                            <img src={require(`../../assets/images/mainpage/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
+                            <img src={require(`../../assets/images/mainpage/all/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
                         </div> claire wineland</a>
                     </li>
                     <li className={`text-black dark:text-white`} ><a href="#" className='flex items-center'>
                         <div className='w-[30px] aspect-square mr-3'>
-                            <img src={require(`../../assets/images/mainpage/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
+                            <img src={require(`../../assets/images/mainpage/all/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
                         </div> claire wineland</a>
                     </li>
                     <li className={`text-black dark:text-white`} ><a href="#"><i className='fa fa-list'></i> all subscriptions</a></li>

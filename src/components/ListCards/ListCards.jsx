@@ -10,7 +10,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -23,7 +23,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -36,7 +36,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -49,7 +49,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -62,7 +62,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -75,7 +75,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -88,7 +88,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -101,7 +101,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -114,7 +114,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -127,7 +127,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -140,7 +140,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -153,7 +153,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -166,7 +166,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -179,7 +179,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -192,7 +192,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>
@@ -205,7 +205,7 @@ export default function ListCards() {
                 <div className='flex gap-2'>
                     <div className="relative">
                         <div className='w-[200px] rounded-lg overflow-hidden '>
-                            <img src={require('../../assets/images/mainpage/image_1.webp')} className='w-full' alt="" />
+                            <img src={require('../../assets/images/mainpage/all/image_1.webp')} className='w-full' alt="" />
                         </div>
                         <p className='absolute bottom-2 right-2 z-10 bg-black p-1 rounded-lg text-sm'>12:23</p>
                     </div>

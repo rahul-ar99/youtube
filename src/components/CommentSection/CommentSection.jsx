@@ -12,14 +12,14 @@ export default function CommentSection() {
             </div>
             <div className='flex mb-9'>
                 <div className='w-[50px] aspect-square rounded-full overflow-hidden bg-black mr-5'>
-                    <img src={require("../../assets/images/mainpage/image_1.webp")} alt="" />
+                    <img src={require("../../assets/images/mainpage/all/image_1.webp")} alt="" />
                 </div>
                 <input type="text" className='w-full h-9 bg-transparent border-b-2' placeholder='add your comment' />
             </div>
             {/* ------------------------------- */}
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -40,7 +40,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -61,7 +61,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -82,7 +82,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -103,7 +103,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -124,7 +124,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -145,7 +145,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -166,7 +166,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -187,7 +187,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -208,7 +208,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -229,7 +229,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -250,7 +250,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -271,7 +271,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -292,7 +292,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -313,7 +313,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -334,7 +334,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -355,7 +355,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>
@@ -376,7 +376,7 @@ export default function CommentSection() {
             </div>
             <div className='flex my-3'>
                 <div className='w-[50px] rounded-full overflow-hidden aspect-square'>
-                    <img src={require('../../assets/images/mainpage/image_10.webp')} alt="" />
+                    <img src={require('../../assets/images/mainpage/all/image_10.webp')} alt="" />
                 </div>
                 <div className="ml-5">
                     <div className='flex gap-4 text-sm'>

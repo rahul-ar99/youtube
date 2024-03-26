@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import UserModal from '../modal/userModal'
 
 export default function Header() {
+
+    const [userState, setUserState] = useState(false);
+
+
 return (
     <section id='header' className='w-full py-2 bg-[#fafafa] dark:bg-[#121212] text-[#121212] dark:text-[#fafafa] fixed top-0 z-10'>
         <div className='wrapper  flex justify-between items-center'>
@@ -21,16 +26,17 @@ return (
                     <i class=" 	fa fa-microphone text-xl px-4"></i>
                 </div>
             </div>
-            <div className='flex gap-3'>
+            <div className='flex gap-3 relative'>
                 <div className='flex w-[45px] h-[45px] justify-center items-center border border-transparent rounded-full hover:bg-zinc-700 hover:cursor-pointer'>
                     <i className=' 	fa fa-video-camera text-xl px-4'></i>
                 </div>
                 <div className='flex w-[45px] h-[45px] justify-center items-center border border-transparent rounded-full  hover:bg-zinc-700 hover:cursor-pointer'>
                     <i className=' 	fa fa-bell-o text-xl'></i>
                 </div>
-                <div className='flex w-[45px] h-[45px] justify-center items-center border border-transparent rounded-full  hover:bg-zinc-700 hover:cursor-pointer'>
+                <div className='flex w-[45px] h-[45px] justify-center items-center border border-transparent rounded-full  hover:bg-zinc-700 hover:cursor-pointer' onClick={()=>setUserState(userState?false:true)}>
                     <i className=' 	fa fa-user-circle-o text-xl p-4'></i>
                 </div>
+                { userState && <UserModal />}
             </div>
         </div>
     </section>
