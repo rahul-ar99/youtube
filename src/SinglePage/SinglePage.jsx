@@ -6,9 +6,9 @@ import CommentSection from '../components/CommentSection/CommentSection'
 
 export default function SinglePage() {
 
-  // useEffect(()=>{
-  //   window.scrollTo(0)
-  // })
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
 
   return (
     <>

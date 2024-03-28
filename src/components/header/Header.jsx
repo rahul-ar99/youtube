@@ -11,7 +11,7 @@ export default function Header() {
 
 
     return (
-        <section id='header' className='w-full py-2 bg-[#fafafa] dark:bg-[#121212] text-[#121212] dark:text-[#fafafa] fixed top-0 z-10'>
+        <section id='header' className='w-full py-2 bg-[#fafafa] dark:bg-[#121212] text-[#121212] dark:text-[#fafafa] fixed top-0 z-20'>
             <div className='wrapper  flex justify-between items-center'>
                 <div className='flex gap-5 items-center'>
                     <div className='p-1 rounded-full w-11 flex justify-center items-center aspect-square hover:cursor-pointer hover:bg-zinc-700' onClick={()=>setNavbarOpen(navbarOpen?false:true)}>

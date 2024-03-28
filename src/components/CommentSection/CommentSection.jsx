@@ -30,7 +30,7 @@ export default function CommentSection() {
                                     <p className='text-zinc-500'>6 days ago</p>
 
                                 </div>
-                                <p className='text-sm line-clamp-2 text-ellipsis max-[640px]:text-xs'>aslfksdjfopsdjf sodif jseopdifjw eoipfsadpoif mesaoipf uawepsofsamdopfisudaf oipcvpoiasdj vcopweriuf posdifmv pasodif uweapofiusadofijsda fopi</p>
+                                <p className='line-clamp-2 text-ellipsis max-[640px]:text-xs'>aslfksdjfopsdjf sodif jseopdifjw eoipfsadpoif mesaoipf uawepsofsamdopfisudaf oipcvpoiasdj vcopweriuf posdifmv pasodif uweapofiusadofijsda fopi</p>
                                 <div className='flex mt-2  max-[640px]:text-xs'>
                                     <div className='flex gap-3 mr-5 items-center'>
                                         <i className='fa fa-thumbs-up'></i>

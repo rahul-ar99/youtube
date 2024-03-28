@@ -1,4 +1,4 @@
-import { Route,  Routes, useNavigate } from 'react-router-dom';
+import { Route,  Routes} from 'react-router-dom';
 import './App.css';
 import Signup from './authentication/signup/signup';
 import Login from './authentication/login/login';
@@ -16,15 +16,10 @@ export const NavbarContext = createContext();
 
 function App() {
 
-    const navigate = useNavigate()    
-
 
     // state for catogary
     const [catogary, setCatogary] = useState("all")
 
-
-    // state for username
-    const [userName, setUserName] = useState('')
 
 
     // state for navbar
