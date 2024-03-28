@@ -1,12 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { NavbarContext } from '../../App'
 
 export default function Navbar() {
+
+
+
+    const {navbarOpen} = useContext(NavbarContext);
 
     // for highlight the active section 
     const [activeNav, setActiveNav] = useState('home')
 
     return (
-        <section id='navbarsection' className='flex flex-col w-max min-w-min h-[94.2vh] overflow-scroll p-4 bg-[#fafafa] dark:bg-[#121212] sticky top-14' >
+        <section id='navbarsection' className={`flex ${navbarOpen?"max-[1080px]:fixed":"max-[1080px]:hidden"} max-[1080px]:w-min z-10 flex-col w-max min-w-min h-[94.2vh] overflow-scroll p-4 bg-[#fafafa] dark:bg-[#121212] sticky top-14`}  >
             <div>
                 <ul>
                     <li className={`${(activeNav==="home"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("home")}><a href="#"><i className='fa fa-home'></i> home</a></li>

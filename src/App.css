@@ -42,3 +42,15 @@
     scrollbar-width: none;
 }
 
+@media (max-width: 1440px) {
+    #navbarsection div ul li{
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+}
+@media (max-width: 1280px) {
+    #navbarsection div ul li{
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+}
