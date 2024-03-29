@@ -6,7 +6,7 @@ export default function CommentSection() {
             <div className='flex gap-5 mb-5'>
                 <p className='text-xl font-semibold max-[980px]:text-base max-[640]:sm'>1884 Comments</p>
                 <div className='flex items-center gap-2 text-xl cursor-pointer'>
-                    <i className='fa fa-thumbs-up'></i>
+                    <i className=' 	fa fa-align-right'></i>
                     <p>filter</p>
                 </div>
             </div>
@@ -33,9 +33,9 @@ export default function CommentSection() {
                                 <p className='line-clamp-2 text-ellipsis max-[640px]:text-xs'>aslfksdjfopsdjf sodif jseopdifjw eoipfsadpoif mesaoipf uawepsofsamdopfisudaf oipcvpoiasdj vcopweriuf posdifmv pasodif uweapofiusadofijsda fopi</p>
                                 <div className='flex mt-2  max-[640px]:text-xs'>
                                     <div className='flex gap-3 mr-5 items-center'>
-                                        <i className='fa fa-thumbs-up cursor-pointer'></i>
+                                        <i className='fa fa-thumbs-up cursor-pointer text-zinc-600 hover:text-white'></i>
                                         <p>1.4k</p>
-                                        <i className='fa fa-thumbs-down cursor-pointer'></i>
+                                        <i className='fa fa-thumbs-down cursor-pointer text-zinc-600 hover:text-white'></i>
                                     </div>
                                     <button>replay</button>
                                 </div>

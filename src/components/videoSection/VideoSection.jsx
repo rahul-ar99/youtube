@@ -1,5 +1,4 @@
 import React from 'react'
-import videoDetails from'../../assets/json/mainpage.json'
 
 
 
@@ -33,7 +32,7 @@ export default function VideoSection( props) {
                                 <p className='whitespace-nowrap max-[1080px]:text-sm'>29.9k subscribers</p>
                             </div>
                         </div>
-                        <button className=' max-[1080px]:text-sm bg-white text-black py-2 px-4 rounded-3xl'>Subscribe</button>
+                        <button className=' max-[1080px]:text-sm bg-white text-black py-2 px-4 rounded-3xl hover:bg-red-600 hover:text-white'>Subscribe</button>
                     </div>
                     <div className='flex gap-4 max-[1440px]:gap-1'>
                         <div className='flex items-center h-min  bg-zinc-800 rounded-3xl overflow-hidden max-[640px]:justify-center'>
@@ -47,23 +46,23 @@ export default function VideoSection( props) {
                             </div>
                         </div>
                         <div className=' flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3 max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer  max-[1080px]:hidden'>
-                            <i className='fa fa-thumbs-up'></i>
+                            <i className='fa fa-share'></i>
                             <p className='max-[1440px]:hidden'>Share</p>
                         </div>
                         <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3  max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
-                            <i className='fa fa-thumbs-up'></i>
+                            <i className='fa fa-download'></i>
                             <p className='max-[1440px]:hidden'>Download</p>
                         </div>
                         <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3  max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
-                            <i className='fa fa-thumbs-up'></i>
+                            <i className='fa fa-scissors'></i>
                             <p className='max-[1440px]:hidden'>Clip</p>
                         </div>
                         <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3  max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
-                            <i className='fa fa-thumbs-up'></i>
+                            <i className='fa fa-save'></i>
                             <p className='max-[1440px]:hidden'>Save</p>
                         </div>
-                        <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3 max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer'>
-                            <i className='fa fa-thumbs-up'></i>
+                        <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-4 max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer'>
+                            <i className='fa fa-ellipsis-h'></i>
                         </div>
                     </div>
                 </div>

@@ -12,12 +12,13 @@ export default function Main() {
         <Header />
         <div className='w-full h-screen'>
             <div className='flex w-full pt-14 relative h-max'>
-                <Navbar />
-                <div className="w-max h-max">
-
-                    <div className=' w-full fixed'>
+                <div className='w-[13%] max-[1440px]:w-[18%]  max-[1080px]:w-min'> 
+                    <Navbar />
+                </div>
+                <div className="w-[87%] max-[1440px]:w-[82%] max-[1080px]:w-full h-max">
+                    {/* <div className=' w-full fixed'> */}
                         <Catogary />
-                    </div>
+                    {/* </div> */}
                     <Allcards />
                 </div>
 

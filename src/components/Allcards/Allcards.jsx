@@ -48,7 +48,7 @@ export default function Allcards() {
                 cardList.map((element,index)=> <Link to={'/singlepage'}><li className='w-full'> <Singlecards head={cardList[index].snippet.title} channel={cardList[index].snippet.channelTitle} views={'1.6'} time={"2 hours ago"} image={cardList[index].snippet.thumbnails.high.url} /></li></Link>)
             }
             </ul> */}
-            <ul id='allcardssection' className='w-full h-max min-h-max flex flex-wrap justify-between p-2 bg-[#fafafa] dark:bg-[#121212] text-black dark:text-white gap-y-5 mt-12'>
+            <ul id='allcardssection' className='w-full h-max min-h-max flex flex-wrap justify-between p-2 bg-[#fafafa] dark:bg-[#121212] text-black dark:text-white gap-y-5'>
             {
                 videoDetails[catogary].map((element,index)=> <Link to={`/singlepage/${catogary}/${element.id-1}`}><li className='w-full'> <Singlecards head={element.headline} channel={element.channel} views={element.total_views} time={element.upload_time} image={index} /></li></Link>)
             }
