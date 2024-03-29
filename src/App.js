@@ -33,7 +33,7 @@ function App() {
                     <Routes>
                         <Route path='login' element={<Login />} />
                         <Route path='signup'  element={<Signup />} />
-                        <Route path='singlepage' element={<Protected Component={SinglePage} />} />
+                        <Route path='singlepage/:selectCatogary/:id' element={<Protected Component={SinglePage} />} />
                         <Route path='/' element={<Protected Component={Main} />} />
                         {/* <Route path='/'  element={<Main />} /> */}
                     </Routes>

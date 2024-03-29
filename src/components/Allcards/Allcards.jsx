@@ -13,6 +13,7 @@ export default function Allcards() {
     
     useEffect(()=>{
         console.log(videoDetails)
+        setIsLoading(true)
     })
     
     
@@ -49,7 +50,7 @@ export default function Allcards() {
             </ul> */}
             <ul id='allcardssection' className='w-full h-max min-h-max flex flex-wrap justify-between p-2 bg-[#fafafa] dark:bg-[#121212] text-black dark:text-white gap-y-5 mt-12'>
             {
-                videoDetails[catogary].map((element,index)=> <Link to={'/singlepage'}><li className='w-full'> <Singlecards head={element.headline} channel={element.channel} views={element.total_views} time={element.upload_time} image={index} /></li></Link>)
+                videoDetails[catogary].map((element,index)=> <Link to={`/singlepage/${catogary}/${element.id-1}`}><li className='w-full'> <Singlecards head={element.headline} channel={element.channel} views={element.total_views} time={element.upload_time} image={index} /></li></Link>)
             }
             </ul>
         </>
