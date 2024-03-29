@@ -23,7 +23,7 @@ export default function SinglePage() {
 
         setTimeout(()=>{
             setIsLoading(false)
-        },5000)
+        },2500)
         console.log(selectCatogary,id)
     },[selectCatogary,id])
 

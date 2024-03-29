@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import UserModal from '../modal/userModal'
 import { NavbarContext } from '../../App';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -17,7 +18,7 @@ export default function Header() {
                     <div className='p-1 rounded-full w-11 flex justify-center items-center aspect-square hover:cursor-pointer hover:bg-zinc-700' onClick={()=>setNavbarOpen(navbarOpen?false:true)}>
                         <i class="fa fa-bars text-xl max-[1440px]:text-lg"></i>
                     </div>
-                    <h1 className='flex'><a href="#" className='flex text-xl font-extrabold w-[40px] items-center  max-[1440px]:w-[30px]'><img src={require('./../../assets/images/youtube.png')} alt="youtube logo" />YouTube</a></h1>
+                    <h1 className='flex'><Link to={'/'} className='flex text-xl font-extrabold w-[40px] items-center  max-[1440px]:w-[30px]'><img src={require('./../../assets/images/youtube.png')} alt="youtube logo" />YouTube</Link></h1>
                 </div>
                 <div className='flex gap-8 max-[1440px]:gap-5 max-[980px]:hidden'>
                     <div className='flex rounded-3xl border border-gray-400 bg-gray-700  overflow-hidden '>
