@@ -17,6 +17,9 @@ export default function CommentSection() {
 
     // json comment and user input comment
     const [allComments, setAllComments] = useState(Comments)
+
+    // loading comment section
+    const [isLoading, setIsLoading] = useState(false)
     
     // get username for comment adding section
     const [user, setUser] = useState('')
@@ -25,24 +28,31 @@ export default function CommentSection() {
         setUser(userDetails['email'].split('@')[0])
     })
 
-    useEffect(()=>{
-        allComments.sort((a,b)=>{
-            const date_b = new Date(b.time)
-            const date_a = new Date(a.time)
-            if(userSort==="moreLikes"){
-                return a.likes - b.likes
-            }
-            else if(userSort==="lowLikes"){
-                return b.likes - a.likes
-            }
-            else if(userSort==="oldCmnts"){
-                return date_b - date_a
-            }
-            else if(userSort==="newCmnts"){
-                return date_a - date_b
-            }
-        })
-    },[userSort])
+    const [sortedData, setSortedData] = useState([])
+
+
+    // when change in sort
+    useEffect(() => {
+        const fetchData = () => {
+            const sortedData = [...allComments].sort((a, b) => {
+                const date_b = new Date(b.time);
+                const date_a = new Date(a.time);
+                if (userSort === "lowLikes") {
+                    return a.likes - b.likes;
+                } else if (userSort === "moreLikes") {
+                    return b.likes - a.likes;
+                } else if (userSort === "newCmnts") {
+                    return date_b - date_a;
+                } else if (userSort === "oldCmnts") {
+                    return date_a - date_b;
+                }
+            });
+            setAllComments(sortedData);
+            setIsLoading(true);
+        };
+    
+        fetchData();
+    }, [userSort]);
 
     
     // comment added by the user
@@ -59,7 +69,7 @@ export default function CommentSection() {
                 "username":`${user}`,
                 "comment": userCmt,
                 "time": timeNow,
-                "likes": 24
+                "likes": 0
             },...allComments])
             setUserCmt('')
         }
@@ -67,7 +77,7 @@ export default function CommentSection() {
 
 
     // calculate the time for when the comment was uploaded
-    const getTime = (value_1) =>{
+    const getTime = (value_1) =>{   
         const uploadTime = new Date(value_1)
         const currentTime = new Date()
         const diffTime = Math.abs(currentTime - uploadTime)
@@ -83,6 +93,7 @@ export default function CommentSection() {
         var timeInDays = Math.floor((timeInHours/24))
 
         return timeInDays + " days ago"
+
     }
 
 
@@ -111,13 +122,14 @@ export default function CommentSection() {
                 <div className={`${commentShow ? 'block':'hidden'} `}>
                     <div className={`flex gap-5 mb-5 justify-between`}>
                         <p className='text-xl font-semibold max-[980px]:text-base max-[640]:sm'>1884 Comments</p>
-                        <div className='flex items-center gap-2 text-xl cursor-pointer'>
-                            <i className=' 	fa fa-align-right'></i>
-                            <select name="commentCatogary" id="commentCatogaryId" className='bg-zinc-600 rounded-xl py-1 px-5' onChange={(e)=>setUserSort(e.target.value)}>
-                                <option value="moreLikes">more likes</option>
-                                <option value="lowLikes">low likes</option>
-                                <option value="newCmnts">newly uploaded</option>
-                                <option value="oldCmnts">uploaded decenting</option>
+                        <div className='flex items-center gap-2 text-xl cursor-pointer  border    py-1 px-2  rounded-xl'>
+                            <i className='fa fa-align-right'></i>
+                            <select name="commentCatogary" id="commentCatogaryId" className='bg-transparent max-[1080px]:text-sm ' onChange={(e)=>setUserSort(e.target.value)}>
+                                <option className='capitalize'  hidden disabled selected value="">sorted by</option>
+                                <option className="capitalize" value="moreLikes">more likes</option>
+                                <option className="capitalize" value="lowLikes">low likes</option>
+                                <option className="capitalize" value="newCmnts">newest comments</option>
+                                <option className="capitalize" value="oldCmnts">oldest comments</option>
                             </select>
                         </div>
                     </div>
