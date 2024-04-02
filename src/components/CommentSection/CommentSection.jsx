@@ -113,7 +113,7 @@ export default function CommentSection() {
     return (
         <div>
             <div className={`${commentBtn?'flex':'hidden'} w-full flex-col items-center justify-center`}>
-                <button className='w-min py-2 px-4 rounded-full hover:bg-zinc-700' onClick={()=>setCommentShow(commentShow?false:true)}>
+                <button className='w-min py-2 px-4 rounded-full hover:bg-zinc-700 max-[640px]:text-sm' onClick={()=>setCommentShow(commentShow?false:true)}>
                     <p className="whitespace-nowrap capitalize">{commentShow?"hide comments":"show comments"}</p>
                     <i className='fa fa-arrow-down flex justify-center'></i>
                 </button>
