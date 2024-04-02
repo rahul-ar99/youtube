@@ -9,16 +9,31 @@
     align-items: center;
 }
 
+#navbarsection div h6{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
 #navbarsection div ul li{
+    font-size: 15px;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 10px 0px;
     width: 100%;
     white-space: nowrap;
 }
 
 #navbarsection div ul li i{
-    margin-right: 20px;
+    font-size: 20px;
+    width: 30px;
 }
+
+#navbarsection div h5{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
 
 #navbarsection hr{
     margin: 10px 0;
@@ -29,13 +44,16 @@
 }
 
 #navbarsection .details ul{
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: start;
     
 }
 #navbarsection .details ul li{
     font-size: 15px;
-    padding: 0;
+    border-radius: 10px;
+    width: min-content;
+    padding: 0px 3px;
 }
 
 #catogary ul{
@@ -47,10 +65,19 @@
         font-size: 15px;
         padding: 8px 12px;
     }
+
+    #navbarsection div ul li div{
+        width: 30px;
+        font-size: 15px;
+    }
 }
 @media (max-width: 1280px) {
     #navbarsection div ul li{
-        font-size: 13px;
+        /* font-size: 13px; */
         padding: 7px 10px;
+    }
+    #navbarsection div ul li i{
+        font-size: 15px;
+        width: 30px;
     }
 }

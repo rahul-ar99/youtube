@@ -32,36 +32,36 @@ export default function VideoSection( props) {
                                 <p className='whitespace-nowrap max-[1080px]:text-sm'>29.9k subscribers</p>
                             </div>
                         </div>
-                        <button className=' max-[1080px]:text-sm bg-white text-black py-2 px-4 rounded-3xl hover:bg-red-600 hover:text-white'>Subscribe</button>
+                        <button className='text-sm  bg-white text-black py-2 px-4 h-full rounded-3xl hover:bg-red-600 hover:text-white'>Subscribe</button>
                     </div>
-                    <div className='flex gap-4 max-[1440px]:gap-1'>
-                        <div className='flex items-center h-min  bg-zinc-800 rounded-3xl overflow-hidden max-[640px]:justify-center'>
-                            <div className=' hover:bg-zinc-700 hover:cursor-pointer py-3  px-5 whitespace-nowrap max-[1440px]:py-1 max-[1440px]:px-3  max-[1080px]:text-sm'>
+                    <div className='flex gap-4 max-[1550px]:gap-1'>
+                        <div className='flex items-center bg-zinc-800 box-content rounded-3xl overflow-hidden h-[50px] max-[640px]:justify-center max-[1440px]:h-[40px] max-[1440px]:py-0 max-[1440px]:px-0'>
+                            <div className=' hover:bg-zinc-700 hover:cursor-pointer py-3  px-5 whitespace-nowrap  max-[1440px]:px-3 max-[1080px]:text-sm'>
                                 <i className='fa fa-thumbs-up'></i>
                                 {item['total_views'].slice(0,4)}K
                             </div>
                             <p>|</p>
-                            <div className=' hover:bg-zinc-700 hover:cursor-pointer py-3 px-5 h-min  max-[1440px]:py-1'>
+                            <div className=' hover:bg-zinc-700 hover:cursor-pointer py-3 px-5 h-min max-[1440px]:px-3 '>
                                 <i className='fa fa-thumbs-down'></i>
                             </div>
                         </div>
-                        <div className=' flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3 max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer  max-[1080px]:hidden'>
+                        <div className='flex items-center gap-1 bg-zinc-800 px-2 rounded-3xl h-[50px] max-[1440px]:h-[40px] max-[1440px]:aspect-square justify-center  hover:bg-zinc-700 hover:cursor-pointer  max-[1080px]:hidden'>
                             <i className='fa fa-share'></i>
                             <p className='max-[1440px]:hidden'>Share</p>
                         </div>
-                        <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3  max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
+                        <div className='flex items-center gap-1 bg-zinc-800 px-2 rounded-3xl h-[50px]  max-[1440px]:h-[40px] max-[1440px]:aspect-square justify-center  hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
                             <i className='fa fa-download'></i>
                             <p className='max-[1440px]:hidden'>Download</p>
                         </div>
-                        <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3  max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
+                        <div className='flex items-center gap-1 bg-zinc-800 px-2 rounded-3xl  h-[50px]  max-[1440px]:h-[40px] max-[1440px]:aspect-square justify-center  hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
                             <i className='fa fa-scissors'></i>
                             <p className='max-[1440px]:hidden'>Clip</p>
                         </div>
-                        <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-3  max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
+                        <div className='flex items-center gap-1 bg-zinc-800 px-2 rounded-3xl h-[50px]  max-[1440px]:h-[40px] max-[1440px]:aspect-square justify-center  hover:bg-zinc-700 hover:cursor-pointer max-[1080px]:hidden'>
                             <i className='fa fa-save'></i>
                             <p className='max-[1440px]:hidden'>Save</p>
                         </div>
-                        <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-min py-4 max-[1440px]:py-1 hover:bg-zinc-700 hover:cursor-pointer'>
+                        <div className='flex items-center gap-1 bg-zinc-800 px-4 rounded-3xl h-[50px] max-[1440px]:h-[40px] max-[1440px]:aspect-square justify-center  hover:bg-zinc-700 hover:cursor-pointer'>
                             <i className='fa fa-ellipsis-h'></i>
                         </div>
                     </div>

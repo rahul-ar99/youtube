@@ -18,13 +18,11 @@ export default function SinglePage() {
     useEffect(()=>{
         setIsLoading(true)
         window.scrollTo(0,0)
-
         setSelectedItem(videoDetails[selectCatogary][id])
 
         setTimeout(()=>{
             setIsLoading(false)
         },2500)
-        console.log(selectCatogary,id)
     },[selectCatogary,id])
 
     return (
@@ -38,7 +36,7 @@ export default function SinglePage() {
                     <img src={require('../assets/gif/loading.gif')} alt="" className='mix-blend-multiply contrast-200 brightness-200'/>
                 </div>
             :
-                <div className='w-full pt-24 px-28 max-[1440px]:px-10 max-[1080px]:px-6 bg-[#121212] flex max-[980px]:flex-col text-white gap-5 '>
+                <div className='w-full pt-24 px-16 max-[1440px]:px-10 max-[1080px]:px-6 bg-[#121212] flex max-[980px]:flex-col text-white gap-5 '>
                     <div className='min-w-[66%]'>
                         <VideoSection  catogaryProps={selectedItem} />
                         <CommentSection />

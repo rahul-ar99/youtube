@@ -7,8 +7,8 @@ export default function Singlecards({head, channel, time, views , image}) {
 
 
   return (
-    <div className='w-min max-[640px]:w-full hover:bg-[#1a1a1a] hover:cursor-pointer p-3 rounded-lg'>
-        <div className='w-[300px] max-[1280px]:w-[260px] max-[640px]:w-full aspect-video overflow-hidden rounded-2xl hover:rounded-none transition-all duration-500 mb-3'>
+    <div className='w-[100%] hover:bg-[#1a1a1a] hover:cursor-pointer py-3 px-2 rounded-lg'>
+        <div className='w-full  aspect-video overflow-hidden rounded-2xl hover:rounded-none transition-all duration-500 mb-3'>
             <img src={require(`../../../assets/images/mainpage/${catogary}/image_${image+1}.webp`)} className='w-full' alt="video img" />
         </div>
         <div className='flex w-full'>

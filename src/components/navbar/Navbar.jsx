@@ -11,21 +11,21 @@ export default function Navbar() {
     const [activeNav, setActiveNav] = useState('home')
 
     return (
-        <section id='navbarsection' className={`flex ${navbarOpen?"max-[1080px]:fixed":"max-[1080px]:hidden"} max-[1080px]:w-min z-10 flex-col w-full min-w-min h-[94.2vh] overflow-scroll p-4 bg-[#fafafa] dark:bg-[#121212] sticky top-14`}  >
+        <section id='navbarsection' className={`flex ${navbarOpen?"max-[1080px]:fixed":"max-[1080px]:hidden"} max-[1080px]:w-min z-10 flex-col w-full min-w-min h-[94.2vh] overflow-scroll text-2xl p-4 bg-[#fafafa] dark:bg-[#121212] sticky top-14`}  >
             <div>
                 <ul>
-                    <li className={`${(activeNav==="home"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("home")}><a href="#"><i className='fa fa-home'></i> home</a></li>
-                    <li className={`${(activeNav==="shorts"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("shorts")}><a href="#"><i className='fa fa-film'></i> shorts</a></li>
+                    <li className={`${(activeNav==="home"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("home")}><a href="#"><i className='fa fa-home'></i>home</a></li>
+                    <li className={`${(activeNav==="shorts"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("shorts")}><a href="#"><i className='fa fa-film'></i>shorts</a></li>
                     <li className={`${(activeNav==="subscribtion"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("subscribtion")}><a href="#"><i class="material-icons">&#xe064;</i>subscribtion</a></li>
                 </ul>
             </div>
             <hr />
             <div>
                 <ul>
-                    <li className={`${(activeNav==="you"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("you")}><a href="#">You<i className='fa fa-arrow-right'></i></a></li>
+                    <li className={`${(activeNav==="you"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("you")}><a href="#" >You<i className='fa fa-arrow-right ml-4'></i></a></li>
                     <li className={`${(activeNav==="history"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("history")}><a href="#"><i class="fa fa-clock-o"></i>history</a></li>
-                    <li className={`${(activeNav==="watch later"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("watch later")}><a href="#"><i className='fa fa-clock-o'></i> watch later</a></li>
-                    <li className={`${(activeNav==="liked videos"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("liked videos")}><a href="#"><i className='fa fa-thumbs-up'></i> liked videos</a></li>
+                    <li className={`${(activeNav==="watch later"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("watch later")}><a href="#"><i className='fa fa-clock-o'></i>watch later</a></li>
+                    <li className={`${(activeNav==="liked videos"?"bg-zinc-700":"")} text-black dark:text-white`} onClick={()=>setActiveNav("liked videos")}><a href="#"><i className='fa fa-thumbs-up'></i>liked videos</a></li>
                 </ul>
             </div>
             <hr />
@@ -35,22 +35,22 @@ export default function Navbar() {
                     <li className={`text-black dark:text-white`} ><a href="#" className='flex items-center'>
                         <div className='w-[30px] aspect-square mr-3'>
                             <img src={require(`../../assets/images/mainpage/all/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
-                        </div> claire wineland</a>
+                        </div>Merry-Jones</a>
                     </li>
                     <li className={`text-black dark:text-white`} ><a href="#" className='flex items-center'>
                         <div className='w-[30px] aspect-square mr-3'>
                             <img src={require(`../../assets/images/mainpage/all/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
-                        </div> claire wineland</a>
+                        </div>Ashley Devonna</a>
                     </li>
                     <li className={`text-black dark:text-white`} ><a href="#" className='flex items-center'>
                         <div className='w-[30px] aspect-square mr-3'>
                             <img src={require(`../../assets/images/mainpage/all/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
-                        </div> claire wineland</a>
+                        </div>DXINX</a>
                     </li>
                     <li className={`text-black dark:text-white`} ><a href="#" className='flex items-center'>
                         <div className='w-[30px] aspect-square mr-3'>
                             <img src={require(`../../assets/images/mainpage/all/image_1.webp`)} alt="profile photo" className='w-full aspect-square rounded-full' />
-                        </div> claire wineland</a>
+                        </div>CACI TWINS</a>
                     </li>
                     <li className={`text-black dark:text-white`} ><a href="#"><i className='fa fa-list'></i> all subscriptions</a></li>
                 </ul>
@@ -92,7 +92,7 @@ export default function Navbar() {
             </div>
             <hr />
             <div className='details'>
-                <div className='flex flex-row flex-wrap list-none gap-x-2'>
+                <ul className='flex flex-row flex-wrap list-none gap-x-2'>
                     <li className='text-black dark:text-white'><a href="#">about</a></li>
                     <li className='text-black dark:text-white'><a href="#">press</a></li>
                     <li className='text-black dark:text-white'><a href="#">copyright</a></li>
@@ -100,14 +100,14 @@ export default function Navbar() {
                     <li className='text-black dark:text-white'><a href="#">creator</a></li>
                     <li className='text-black dark:text-white'><a href="#">advertise</a></li>
                     <li className='text-black dark:text-white'><a href="#">developers</a></li>
-                </div>
-                <div className='flex flex-row flex-wrap list-none gap-x-2'>
+                </ul>
+                <ul className='flex flex-row flex-wrap list-none gap-x-2'>
                     <li className='text-black dark:text-white'><a href="#">terms</a></li>
                     <li className='text-black dark:text-white'><a href="#">privacy</a></li>
                     <li className='text-black dark:text-white'><a href="#">policy & safety</a></li>
                     <li className='text-black dark:text-white'><a href="#">how youtube works</a></li>
                     <li className='text-black dark:text-white'><a href="#">test new features</a></li>
-                </div>
+                </ul>
                 <h5>© 2024 Google LLC</h5>
             </div>
 
