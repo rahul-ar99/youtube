@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Comments from '../../assets/json/comment.json'
+import { userNameContext } from '../../App'
 
 export default function CommentSection() {
     
+
+    const {userNameState} = useContext(userNameContext)
+
     // comment button show when responsive 980px
     const [commentBtn, setCommentBtn] = useState(false)
 
@@ -66,10 +70,11 @@ export default function CommentSection() {
         if(userCmt != ""){
             setAllComments([{
                 "id": 9,
-                "username":`${user}`,
+                "username":`${userNameState['name']}`,
                 "comment": userCmt,
                 "time": timeNow,
-                "likes": 0
+                "likes": 0,
+                'images':`${userNameState['picture']}`
             },...allComments])
             setUserCmt('')
         }
@@ -134,8 +139,8 @@ export default function CommentSection() {
                         </div>
                     </div>
                     <div className='flex mb-9'>
-                        <div className='w-[50px] max-[640px]:w-[30px] aspect-square rounded-full overflow-hidden bg-black mr-5'>
-                            <img src={require("../../assets/images/mainpage/all/image_1.webp")} alt="" />
+                        <div className='w-[50px]  max-[640px]:w-[30px] aspect-square rounded-full overflow-hidden bg-black mr-5'>
+                            <img src={userNameState['picture']} alt="" />
                         </div>
                         <input type="text" className='w-full h-9 bg-transparent border-b-2 max-[640px]:text-sm' placeholder='add your comment' value={userCmt} onChange={(element)=>setUserCmt(element.target.value)}/>
                         <button className='capitalize py-1 px-3 rounded-full hover:bg-zinc-700' onClick={addComment}>add</button>
@@ -146,7 +151,7 @@ export default function CommentSection() {
                             return(
                                 <div className='flex my-6'>
                                     <div className='max-w-[40px] rounded-full overflow-hidden aspect-square'>
-                                        <img src={require('../../assets/images/mainpage/all/image_10.webp')} className='w-full' alt="" />
+                                        <img src={element.images==null?require('../../assets/images/mainpage/all/image_10.webp'):userNameState['picture']} className='w-full aspect-square rounded-full   ' alt="" />
                                     </div>
                                     <div className="ml-5">
                                         <div className='flex gap-4 text-sm text-zinc-300'>

@@ -1,11 +1,15 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import UserModal from '../modal/userModal'
 import { NavbarContext } from '../../App';
 import { Link } from 'react-router-dom';
 import { SearchContext } from '../../App';
+import { userNameContext } from '../../App';
 
 
 export default function Header() {
+
+
+    const {userNameState, setUserNameState} = useContext(userNameContext)
 
     const {searchValue, setSearchValue} = useContext(SearchContext)
 
@@ -17,6 +21,15 @@ export default function Header() {
 
 
     const [userState, setUserState] = useState(false);
+
+    useEffect(()=>{
+        const userDetails = JSON.parse(localStorage.getItem('user'))
+        setUserNameState({"name":userDetails['name'],'picture':userDetails['picture']})
+        console.log(userNameState.name)
+        console.log(userNameState.picture)
+    },[])
+
+
 
 
     return (
@@ -50,8 +63,9 @@ export default function Header() {
                     <div className='flex w-[45px] h-[45px] justify-center items-center border border-transparent rounded-full  hover:bg-zinc-700 hover:cursor-pointer'>
                         <i className=' 	fa fa-bell-o text-xl max-[1440px]:text-lg'></i>
                     </div>
-                    <div className='flex w-[45px] h-[45px] justify-center items-center border border-transparent rounded-full  hover:bg-zinc-700 hover:cursor-pointer' onClick={()=>setUserState(userState?false:true)}>
-                        <i className=' 	fa fa-user-circle-o text-xl p-4 max-[1440px]:text-lg'></i>
+                    <div className='flex w-[45px] h-[45px] justify-center items-center border border-transparent rounded-full overflow-hidden p-1 hover:bg-zinc-700 hover:cursor-pointer' onClick={()=>setUserState(userState?false:true)}>
+                        {/* <i className=' 	fa fa-user-circle-o text-xl p-4 max-[1440px]:text-lg'></i> */}
+                        <img className='rounded-full' src={userNameState.picture} alt="" />
                     </div>
                     { userState && <UserModal />}
                 </div>

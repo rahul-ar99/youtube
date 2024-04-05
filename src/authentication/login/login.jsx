@@ -2,6 +2,9 @@ import React, {useContext, useEffect, useState} from 'react'
 import { auth } from '../../firebase'
 import { signInWithEmailAndPassword } from '@firebase/auth'
 import { Link, useNavigate } from 'react-router-dom'
+import { GoogleLogin } from '@react-oauth/google';
+import { jwtDecode } from "jwt-decode";
+
 
 export default function Login() {
 
@@ -44,6 +47,23 @@ export default function Login() {
                 <Link to={'/signup'} className='text-white' >new member!</Link>
                 <input className='bg-[#121212] text-[#fafafa] border border-[#fafafa] p-5 rounded-lg hover:bg-[#fafafa] hover:text-[#121212]' type="submit"  />
             </form>
+            <div className='w-full flex justify-center my-3'>
+                <p className='text-white'>or</p>
+            </div>
+            <div className='w-full flex justify-center'>
+                <GoogleLogin    
+                    onSuccess={credentialResponse => {
+                        const credentialResponseDecode = jwtDecode(credentialResponse.credential)
+                        localStorage.setItem("token", JSON.stringify(credentialResponse));
+                        localStorage.setItem("user", JSON.stringify(credentialResponseDecode))
+                        navigate('/')
+                    }}
+                    onError={() => {
+                        console.log('Login Failed');
+                    }}
+                    />;
+
+            </div>
         </div>
     </div>
   )
