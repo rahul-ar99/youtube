@@ -44,14 +44,6 @@ export default function Signup() {
     } 
 
 
-
-
-
-
-
-
-
-
   return (
 
     <div className= "w-screen h-screen bg-[#fafafa] dark:bg-[#121212] flex items-center justify-center">
