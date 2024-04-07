@@ -4,6 +4,7 @@ import { NavbarContext } from '../../App';
 import { Link } from 'react-router-dom';
 import { SearchContext } from '../../App';
 import { userNameContext } from '../../App';
+import axios from 'axios';
 
 
 export default function Header() {
@@ -22,11 +23,22 @@ export default function Header() {
 
     const [userState, setUserState] = useState(false);
 
+
+    const [userDetails, setuserDetails] = useState([])
+
+
+  
+
+    
+    
+
+
+
     useEffect(()=>{
-        const userDetails = JSON.parse(localStorage.getItem('user'))
-        setUserNameState({"name":userDetails['name'],'picture':userDetails['picture']})
-        console.log(userNameState.name)
-        console.log(userNameState.picture)
+        if(localStorage.getItem('user')){
+            const userDetails = JSON.parse(localStorage.getItem('user'))
+            setUserNameState({"name":userDetails['name'],'picture':userDetails['picture']})
+        }
     },[])
 
 
@@ -65,7 +77,7 @@ export default function Header() {
                     </div>
                     <div className='flex w-[45px] h-[45px] justify-center items-center border border-transparent rounded-full overflow-hidden p-1 hover:bg-zinc-700 hover:cursor-pointer' onClick={()=>setUserState(userState?false:true)}>
                         {/* <i className=' 	fa fa-user-circle-o text-xl p-4 max-[1440px]:text-lg'></i> */}
-                        <img className='rounded-full' src={userNameState.picture} alt="" />
+                        <img className='rounded-full' src={userNameState.picture==null?require('../../assets/images/user.png'):userNameState.picture} alt="" />
                     </div>
                     { userState && <UserModal />}
                 </div>

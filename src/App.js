@@ -21,7 +21,7 @@ function App() {
 
     const [searchValue, setSearchValue] = useState('')
 
-    const [userNameState, setUserNameState] = useState('')
+    const [userNameState, setUserNameState] = useState({})
 
 
     // state for catogary

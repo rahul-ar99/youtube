@@ -19,7 +19,7 @@ export default function Signup() {
 
     // set error msg for password and email is mistaked
     const [errorMsg, setErrorMsg] = useState('')
-
+    
 
     const navigate = useNavigate()
 

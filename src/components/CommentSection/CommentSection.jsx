@@ -64,6 +64,7 @@ export default function CommentSection() {
 
         // get the time
         const timeNow = new Date()
+        console.log(userNameState)
 
 
         // push to array when comment is not empty
@@ -77,6 +78,7 @@ export default function CommentSection() {
                 'images':`${userNameState['picture']}`
             },...allComments])
             setUserCmt('')
+            console.log(allComments)
         }
     }
 
@@ -151,7 +153,7 @@ export default function CommentSection() {
                             return(
                                 <div className='flex my-6'>
                                     <div className='max-w-[40px] rounded-full overflow-hidden aspect-square'>
-                                        <img src={element.images==null?require('../../assets/images/mainpage/all/image_10.webp'):userNameState['picture']} className='w-full aspect-square rounded-full   ' alt="" />
+                                        <img src={element.images==null || element.images =='null'?require('../../assets/images/user.png'):element.images} className='w-full aspect-square rounded-full   ' alt="" />
                                     </div>
                                     <div className="ml-5">
                                         <div className='flex gap-4 text-sm text-zinc-300'>

@@ -11,7 +11,7 @@ export default function UserModal() {
     useEffect(()=>{
         const userDetails = JSON.parse(localStorage.getItem('user'))
         setUser(userDetails['name'])
-        setUserImg(userDetails['picture'])
+        setUserImg(userDetails['picture']==null?require('../../assets/images/user.png'):userDetails['picture'])
         // setUser(userDetails['email'].split('@')[0])
         console.log(user)
     })
