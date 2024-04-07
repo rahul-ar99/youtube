@@ -51,44 +51,12 @@ export default function Login() {
         formData.append(name, value);
     };
     
-    
-    
-  
-      // State to store the fetched data
-      const [data, setData] = useState(null);
 
-    const fetchData = async () => {
-        try {
-        const url = 'https://grolius-api.talrop.works/api/v1/users/profile';
-        // const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQzOTQ4NTg5LCJpYXQiOjE3MTI0MTI1ODksImp0aSI6IjI5YTBmMDQ2MjYwZTQ3NWY5OGIzMzRiNTkyMTc2ODRhIiwidXNlcl9pZCI6ODJ9.4Se9ir_UMfC37VQC95Zk2tDeJT4E_G4PHfJY6lMmnkk'; // Replace 'your_bearer_token' with your actual token
-        console.log(token)
-
-        const response = await axios.get(url, {
-            headers: {
-            Authorization: `Bearer ${token}`
-        }
-        });
-
-        setData(response.data);
-        console.log(data)
-        console.log(response.data['data']['phone'])
-        if (data['status_code'] === 6000) {
-            // Perform actions if login is successful
-            console.log("Login successful");
-
-        }
-    } catch (error) {
-        console.error('Error:', error);
-    }
-};
-
-// useEffect(()=>{
-    //     fetchData();
-    //   }, []); 
     
     const handleSubmit = async (event) => {
         event.preventDefault();
         console.log("Submit button clicked");
+        setErrorMsg('')
     
         try {
             const response = await axios.post('https://grolius-api.talrop.works/api/v1/users/student/login/', formData);
@@ -117,9 +85,11 @@ export default function Login() {
                 }
             } catch (error) {
                 console.error('Error:', error);
+                setErrorMsg("invalid Data")
             }
         } catch (error) {
             console.error('Error:', error);
+            setErrorMsg("invalid Data")
         }
     };
     
