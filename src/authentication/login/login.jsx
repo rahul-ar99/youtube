@@ -44,7 +44,6 @@ export default function Login() {
     // ------------------------------------------------------------------------------ 
 
     const [formData, setFormData] = useState(new FormData());
-    const [response, setResponse] = useState(null);
     
     const handleInputChange = (event) => {
         const { name, value } = event.target;
